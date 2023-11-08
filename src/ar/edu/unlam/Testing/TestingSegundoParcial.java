@@ -19,7 +19,7 @@ public class TestingSegundoParcial {
 		long cuit = 2024750578;
 		String nombreYApelido = "Juan Perez";
 //		Preceso
-		Cliente cliente1 = new Cliente(cuit, nombreYApelido);
+		Cliente cliente1 = new Cliente(cuit, nombreYApelido);	
 //		Salida
 		assertNotNull(cliente1);
 	}
@@ -49,20 +49,34 @@ public class TestingSegundoParcial {
 //		Salida
 		assertNotNull(dispositivo1);
 	}
+
 	@Test
 	public void queSepUedaCrearUnDispositivoMovil() {
 //		Preparacion-Entrada
 		long cuitCliente = 2024750578;
 		Integer cpLocalidad = 1111;
 		long ip = 12341234;
-		long imei=12121212;
+		long imei = 12121212;
 		SistemaOperativo so = null;
-		BiometriaTipo biometria=null;
+		BiometriaTipo biometria = null;
 		// Preceso
-		Dispositivo dispositivo1 = new Movil(cuitCliente, so, ip, cpLocalidad,imei,biometria);
+		Dispositivo dispositivo1 = new Movil(cuitCliente, so, ip, cpLocalidad, imei, biometria);
 //		Salida
 		assertNotNull(dispositivo1);
 	}
-
+	@Test
+	public void probandoGitHubAcessToken() {
+//		Preparacion-Entrada
+		long cuitCliente = 2024750578;
+		Integer cpLocalidad = 1111;
+		long ip = 12341234;
+		long imei = 12121212;
+		SistemaOperativo so = null;
+		BiometriaTipo biometria = null;
+		// Preceso
+		Dispositivo dispositivo1 = new Movil(cuitCliente, so, ip, cpLocalidad, imei, biometria);
+//		Salida
+		assertNotNull(dispositivo1);
+	}
 
 }
