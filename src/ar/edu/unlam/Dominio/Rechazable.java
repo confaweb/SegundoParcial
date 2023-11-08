@@ -1,4 +1,6 @@
-package ar.edu.unlam.pb2;
+package ar.edu.unlam.Dominio;
+
+import ar.edu.unlam.Exception.FraudeException;
 
 public interface Rechazable {
 	
